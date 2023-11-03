@@ -1,0 +1,136 @@
+{
+    "sources": [
+        "./artifacts/library.scrypt"
+    ],
+    "output": [
+        {
+            "opcode": "$x"
+        },
+        {
+            "opcode": "$l.ctor.a"
+        },
+        {
+            "opcode": "$l.ctor.b"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        }
+    ]
+}

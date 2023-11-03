@@ -1,0 +1,40 @@
+{
+    "sources": [
+        "./artifacts/p2pkh.scrypt"
+    ],
+    "output": [
+        {
+            "opcode": "$address"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_HASH160"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "OP_3DUP"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_CHECKSIG"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        }
+    ]
+}

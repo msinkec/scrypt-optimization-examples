@@ -1,0 +1,28 @@
+{
+    "sources": [
+        "./artifacts/helloWorld.scrypt"
+    ],
+    "output": [
+        {
+            "opcode": "$hash"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        }
+    ]
+}

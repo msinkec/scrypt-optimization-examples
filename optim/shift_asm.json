@@ -1,0 +1,223 @@
+{
+    "sources": [
+        "./artifacts/shift.scrypt"
+    ],
+    "output": [
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_NUM2BIN"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2OVER"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_NUM2BIN"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2OVER"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_NUM2BIN"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        }
+    ]
+}

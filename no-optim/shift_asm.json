@@ -1,0 +1,349 @@
+{
+    "sources": [
+        "./artifacts/shift.scrypt"
+    ],
+    "output": [
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_NUM2BIN"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_NUM2BIN"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_NUM2BIN"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NOP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        }
+    ]
+}

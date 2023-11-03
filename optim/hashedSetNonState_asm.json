@@ -1,0 +1,5590 @@
+{
+    "sources": [
+        "./artifacts/hashedSetNonState.scrypt"
+    ],
+    "output": [
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "$set._data"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4d"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4e"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SIZE"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_LESSTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_11"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOTIF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_NOTIF"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_NOTIF"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_13"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_12"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4d"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4e"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SIZE"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4d"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4e"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SIZE"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4d"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4e"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SIZE"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4c"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_1ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4d"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "4e"
+        },
+        {
+            "opcode": "OP_NUMEQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "00"
+        },
+        {
+            "opcode": "OP_CAT"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2SWAP"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ROT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_2ROT"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_BIN2NUM"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SIZE"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_DIV"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_IF"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "20"
+        },
+        {
+            "opcode": "OP_ADD"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_SPLIT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_OVER"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_ROLL"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NOT"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_ELSE"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        },
+        {
+            "opcode": "OP_ENDIF"
+        }
+    ]
+}

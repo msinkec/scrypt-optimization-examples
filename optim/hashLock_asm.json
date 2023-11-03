@@ -1,0 +1,28 @@
+{
+    "sources": [
+        "./artifacts/hashLock.scrypt"
+    ],
+    "output": [
+        {
+            "opcode": "$sha256"
+        },
+        {
+            "opcode": "OP_2DUP"
+        },
+        {
+            "opcode": "OP_SWAP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_EQUAL"
+        },
+        {
+            "opcode": "OP_NIP"
+        },
+        {
+            "opcode": "OP_NIP"
+        }
+    ]
+}

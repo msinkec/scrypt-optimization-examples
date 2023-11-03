@@ -1,0 +1,2110 @@
+{
+    "sources": [
+        "./artifacts/multiPartyHashPuzzle.scrypt"
+    ],
+    "output": [
+        {
+            "opcode": "$hashes[0]"
+        },
+        {
+            "opcode": "$hashes[1]"
+        },
+        {
+            "opcode": "$hashes[2]"
+        },
+        {
+            "opcode": "$hashes[3]"
+        },
+        {
+            "opcode": "$hashes[4]"
+        },
+        {
+            "opcode": "$hashes[5]"
+        },
+        {
+            "opcode": "$hashes[6]"
+        },
+        {
+            "opcode": "$hashes[7]"
+        },
+        {
+            "opcode": "$hashes[8]"
+        },
+        {
+            "opcode": "$hashes[9]"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_2"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_3"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_4"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_5"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_6"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_7"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_8"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "13"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_SHA256"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_9"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_0"
+        },
+        {
+            "opcode": "OP_GREATERTHANOREQUAL"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_10"
+        },
+        {
+            "opcode": "OP_LESSTHAN"
+        },
+        {
+            "opcode": "OP_VERIFY"
+        },
+        {
+            "opcode": "OP_SUB"
+        },
+        {
+            "opcode": "OP_1"
+        },
+        {
+            "opcode": "OP_MUL"
+        },
+        {
+            "opcode": "OP_1SUB"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DUP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_PICK"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_DROP"
+        },
+        {
+            "opcode": "OP_TOALTSTACK"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_FROMALTSTACK"
+        },
+        {
+            "opcode": "OP_EQUALVERIFY"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_2DROP"
+        },
+        {
+            "opcode": "OP_1"
+        }
+    ]
+}
