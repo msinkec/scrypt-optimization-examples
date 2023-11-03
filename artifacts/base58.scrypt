@@ -1,0 +1,32 @@
+
+library Base58 {
+  static const bytes P2PKH_verbyte_mainnet = "00";
+  static const bytes P2PKH_verbyte_testnet = "6f";
+  static function base58EncodeCheckAddr(bytes addr, bytes verbyte) : bytes {
+    bytes payload = verbyte + addr;
+    bytes bebytes = payload + hash256(payload);
+    int addrInt = Utils.fromLEUnsigned(reverseBytes(bebytes, 58));
+    bytes res = "";
+    bool done = false;
+    loop (33) : i {
+        if(addrInt <= 0) {
+          done = true;
+        }
+        if(!done) {
+          int tmp = addrInt / 58;
+          int carry = addrInt % 58;
+          res = num2bin(carry, 1) + res;
+          addrInt = tmp;
+        }
+      }
+    return res;
+  }
+}
+
+contract Base58Test {
+  public function main(bytes addr) {
+    bytes verbyte = Base58.P2PKH_verbyte_testnet;
+    bytes result = Base58.base58EncodeCheckAddr(addr, verbyte);
+    require(result == addr);
+  }
+}

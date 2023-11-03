@@ -1,0 +1,14 @@
+
+contract Lottery {
+  const PubKey[5] players;
+  const Sha256[5] nonceHashes;
+  public function reveal(int[5] nonce, Sig sig) {
+    int sum = 0;
+    loop (5) : i {
+        require(hash256(pack(nonce[i])) == this.nonceHashes[i]);
+        sum += nonce[i];
+      }
+    PubKey winner = this.players[(sum % 5)];
+    require(checkSig(sig, winner));
+  }
+}

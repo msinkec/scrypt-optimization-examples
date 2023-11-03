@@ -1,0 +1,28 @@
+
+contract Matrix {
+  static const int[4][4] Identify = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]];
+  static function multiply(int[4][4] mat0, int[4][4] mat1) : int[4][4] {
+    int[4] zeroRow = repeat(0, 4);
+    int[4][4] mat2 = repeat(zeroRow, 4);
+    loop (4) : i {
+        loop (4) : j {
+          loop (4) : k {
+            mat2[i][j] += mat0[i][k] * mat1[k][j];
+          }
+        }
+      }
+    return mat2;
+  }
+  public function main(int[4][4] result) {
+    int[4][4] mat0 = [[1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3], [4, 4, 4, 4]];
+    int[4][4] mat1 = [[1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3], [4, 4, 4, 4]];
+    int[4][4] mat0_ = Matrix.multiply(mat0, Matrix.Identify);
+    require(mat0_ == mat0);
+    mat0_ = Matrix.multiply(Matrix.Identify, mat0);
+    require(mat0_ == mat0);
+    int[4][4] product = Matrix.multiply(mat0, mat1);
+    int[4][4] result_ = [[10, 10, 10, 10], [20, 20, 20, 20], [30, 30, 30, 30], [40, 40, 40, 40]];
+    require(product == result_);
+    require(product == result);
+  }
+}

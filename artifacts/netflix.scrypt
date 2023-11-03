@@ -1,0 +1,12 @@
+
+contract Netflix {
+  PubKey alice;
+  PubKey bob;
+  Sha256 hash;
+  public function unlock(bytes dataOrSig, Sig sig) {
+    if(sha256(dataOrSig) != this.hash) {
+        Sig aliceSig = Sig(dataOrSig);
+      }
+    require(checkSig(sig, this.alice));
+  }
+}

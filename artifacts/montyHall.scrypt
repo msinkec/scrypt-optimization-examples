@@ -1,0 +1,73 @@
+struct __scrypt_ts_Outpoint {  bytes txid;  int outputIndex;}  struct __scrypt_ts_UTXO {  __scrypt_ts_Outpoint outpoint;  bytes script;  int value;}  struct __scrypt_ts_ScriptContext {  bytes version;  bytes hashPrevouts;  bytes hashSequence;  bytes hashOutputs;  int locktime;  int sequence;  SigHashType sigHashType;  __scrypt_ts_UTXO utxo;  SigHashPreimage preimage;}
+
+contract MontyHall {
+  const PubKey player;
+  const PubKey host;
+  @state int step;
+  @state int choice;
+  @state int openedDoor;
+  Sha256[3] doorHashes;
+  __scrypt_ts_ScriptContext ctx;
+  constructor(PubKey player, PubKey host, Sha256[3] doorHashes) {
+    this.player = player;
+    this.host = host;
+    this.step = 0;
+    this.choice = -1;
+    this.openedDoor = -1;
+    this.doorHashes = doorHashes;
+  }
+  public function choose(int choice, Sig sig, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = MontyHall.createCtx(__scrypt_ts_txPreimage);
+    require(++this.step == 1);
+    checkSig(sig, this.player);
+    this.choice = choice;
+    require(this.ctx.hashOutputs == hash256(this.buildStateOutput(this.ctx.utxo.value)));
+  }
+  public function open(int goatDoorNum, bytes behindDoor, Sig sig, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = MontyHall.createCtx(__scrypt_ts_txPreimage);
+    require(++this.step == 2);
+    checkSig(sig, this.host);
+    this.openedDoor = goatDoorNum;
+    Sha256 goatDoorHash = this.doorHashes[(goatDoorNum)];
+    require(sha256(behindDoor) == goatDoorHash);
+    require(!this.isCar(behindDoor));
+    require(this.ctx.hashOutputs == hash256(this.buildStateOutput(this.ctx.utxo.value)));
+  }
+  public function stay(bool stay, Sig sig, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = MontyHall.createCtx(__scrypt_ts_txPreimage);
+    require(++this.step == 3);
+    checkSig(sig, this.player);
+    if(!stay) {
+        this.choice = this.findUnopenedDoor();
+      }
+    require(this.ctx.hashOutputs == hash256(this.buildStateOutput(this.ctx.utxo.value)));
+  }
+  public function reveal(bytes behindDoor, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = MontyHall.createCtx(__scrypt_ts_txPreimage);
+    require(++this.step == 4);
+    Sha256 doorHash = this.doorHashes[(this.choice)];
+    require(sha256(behindDoor) == doorHash);
+    bool won = this.isCar(behindDoor);
+    PubKey winner = won ? this.player : this.host;
+    bytes winnerScript = Utils.buildPublicKeyHashScript(hash160(winner));
+    bytes payoutOutput = Utils.buildOutput(winnerScript, this.ctx.utxo.value);
+    require(this.ctx.hashOutputs == hash256(payoutOutput));
+  }
+  function isCar(bytes behindDoor) : bool {
+    return unpack(behindDoor) % 2 == 1;
+  }
+  function findUnopenedDoor() : int {
+    int result = -1;
+    loop (3) : i {
+        if(i != this.choice && i != this.openedDoor) result = i;
+      }
+    return result;
+  }
+  static function createCtx(SigHashPreimage txPreimage) : __scrypt_ts_ScriptContext {  bytes version = SigHash.nVersion(txPreimage);  bytes hashPrevouts = SigHash.hashPrevouts(txPreimage);  bytes hashSequence = SigHash.hashSequence(txPreimage);  bytes hashOutputs = SigHash.hashOutputs(txPreimage);  int locktime = SigHash.nLocktime(txPreimage);  int sequence = SigHash.nSequence(txPreimage);  SigHashType sigHashType = SigHash.sigHashType(txPreimage);  bytes txid = SigHash.outpoint(txPreimage)[0 : 32];  int outputIndex = unpack(SigHash.outpoint(txPreimage)[32 :]);  __scrypt_ts_Outpoint outpoint = { txid, outputIndex };  bytes scriptCode = SigHash.scriptCode(txPreimage);  int value = SigHash.value(txPreimage);  __scrypt_ts_UTXO utxo = { outpoint, scriptCode, value };  return { version, hashPrevouts, hashSequence, hashOutputs, locktime, sequence, sigHashType, utxo, txPreimage };}
+  function timeLock(int locktime): bool {  bool res = true;  res = this.ctx.sequence < 0xffffffff;  if (    locktime < 500000000  ) {    res = res && this.ctx.locktime < 500000000;  }  return res && this.ctx.locktime >= locktime;}
+  function buildStateOutput(int amount) : bytes {  bytes script = this.getStateScript();  return Utils.buildOutput(script, amount);}
+}

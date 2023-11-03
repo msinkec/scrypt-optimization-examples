@@ -1,0 +1,58 @@
+struct __scrypt_ts_Outpoint {  bytes txid;  int outputIndex;}  struct __scrypt_ts_UTXO {  __scrypt_ts_Outpoint outpoint;  bytes script;  int value;}  struct __scrypt_ts_ScriptContext {  bytes version;  bytes hashPrevouts;  bytes hashSequence;  bytes hashOutputs;  int locktime;  int sequence;  SigHashType sigHashType;  __scrypt_ts_UTXO utxo;  SigHashPreimage preimage;}
+
+contract RockPaperScissors {
+  static const int INIT = 0;
+  static const int ROCK = 1;
+  static const int PAPER = 2;
+  static const int SCISSORS = 3;
+  static const int DataLen = 1;
+  __scrypt_ts_ScriptContext ctx;
+  constructor(){}
+  public function follow(int action, Ripemd160 playerBpkh, int satoshiAmount, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = RockPaperScissors.createCtx(__scrypt_ts_txPreimage);
+    require(action > 0 && action < 4);
+    bytes lockingScript = this.ctx.utxo.script;
+    int scriptLen = len(lockingScript);
+    int initAction = unpack(lockingScript[scriptLen - 1 : len(lockingScript)]);
+    require(initAction == 0);
+    int satoshiInit = this.ctx.utxo.value;
+    bytes codePart = lockingScript[scriptLen - Constants.PubKeyHashLen - 1 : len(lockingScript)];
+    bytes outputScript0 = codePart + playerBpkh + num2bin(action, 1);
+    bytes output0 = Utils.buildOutput(outputScript0, (satoshiInit * 3) / 2);
+    bytes lockingScript1 = Utils.buildPublicKeyHashScript(playerBpkh);
+    bytes output1 = Utils.buildOutput(lockingScript1, satoshiAmount);
+    bytes output = output0 + output1;
+    require(hash256(output) == this.ctx.hashOutputs);
+  }
+  public function finish(int action, Sig sig, PubKey playerA, int satoshiAmountA, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = RockPaperScissors.createCtx(__scrypt_ts_txPreimage);
+    require(action > 0 && action < 4);
+    int satoshiTotal = this.ctx.utxo.value;
+    bytes lockingScript = this.ctx.utxo.script;
+    int scriptLen = len(lockingScript);
+    int bAction = unpack(lockingScript[scriptLen - 1 : len(lockingScript)]);
+    require(bAction != 0);
+    Ripemd160 playerAdata = Ripemd160(lockingScript[scriptLen - Constants.PubKeyHashLen * 2 - 1 : scriptLen - Constants.PubKeyHashLen - 1]);
+    require(hash160(num2bin(action, 1) + playerA) == playerAdata);
+    require(checkSig(sig, playerA));
+    int satoshiAmountB = (satoshiTotal * 1) / 3;
+    if(action == (bAction % 3) + 1) {
+        satoshiAmountB = 0;
+      } else if(bAction == (action % 3) + 1) {
+        satoshiAmountB = (satoshiTotal * 2) / 3;
+      }
+    Ripemd160 playerApkh = hash160(playerA);
+    bytes output0 = Utils.buildOutput(Utils.buildPublicKeyHashScript(playerApkh), satoshiAmountA);
+    bytes output1 = b'';
+    if(satoshiAmountB > 0) {
+        Ripemd160 playerBpkh = Ripemd160(lockingScript[scriptLen - Constants.PubKeyHashLen - 1 : scriptLen - 1]);
+        output1 = Utils.buildOutput(Utils.buildPublicKeyHashScript(playerBpkh), satoshiAmountB);
+      }
+    bytes output = output0 + output1;
+    require(hash256(output) == this.ctx.hashOutputs);
+  }
+  static function createCtx(SigHashPreimage txPreimage) : __scrypt_ts_ScriptContext {  bytes version = SigHash.nVersion(txPreimage);  bytes hashPrevouts = SigHash.hashPrevouts(txPreimage);  bytes hashSequence = SigHash.hashSequence(txPreimage);  bytes hashOutputs = SigHash.hashOutputs(txPreimage);  int locktime = SigHash.nLocktime(txPreimage);  int sequence = SigHash.nSequence(txPreimage);  SigHashType sigHashType = SigHash.sigHashType(txPreimage);  bytes txid = SigHash.outpoint(txPreimage)[0 : 32];  int outputIndex = unpack(SigHash.outpoint(txPreimage)[32 :]);  __scrypt_ts_Outpoint outpoint = { txid, outputIndex };  bytes scriptCode = SigHash.scriptCode(txPreimage);  int value = SigHash.value(txPreimage);  __scrypt_ts_UTXO utxo = { outpoint, scriptCode, value };  return { version, hashPrevouts, hashSequence, hashOutputs, locktime, sequence, sigHashType, utxo, txPreimage };}
+  function timeLock(int locktime): bool {  bool res = true;  res = this.ctx.sequence < 0xffffffff;  if (    locktime < 500000000  ) {    res = res && this.ctx.locktime < 500000000;  }  return res && this.ctx.locktime >= locktime;}
+}

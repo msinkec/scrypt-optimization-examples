@@ -1,0 +1,9 @@
+
+contract Demo {
+  int sum;
+  int diff;
+  public function unlock(int x, int y) {
+    require(x + y == this.sum);
+    require(x - y == this.diff);
+  }
+}

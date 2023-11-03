@@ -1,0 +1,25 @@
+
+contract PrivateKeyPuzzle {
+  PubKey pubKey;
+  static function extractRFromSig(Sig sig) : bytes {
+    int rlen = unpack(sig[(6)/2 : (8)/2]);
+    return sig[(8)/2 : ((8 + rlen))/2];
+  }
+  static function extractSigHashFlagFromSig(Sig sig) : bytes {
+    int l = len(sig) * 2;
+    return sig[((l - 2))/2 : len(sig)];
+  }
+  public function unlockCodeSep(Sig[2] sigs) {
+    require(checkSig(sigs[0], this.pubKey));
+    ***
+    require(checkSig(sigs[1], this.pubKey));
+    require(PrivateKeyPuzzle.extractRFromSig(sigs[0]) == PrivateKeyPuzzle.extractRFromSig(sigs[1]));
+  }
+  public function unlockSigHash(Sig[2] sigs) {
+    require(checkSig(sigs[0], this.pubKey));
+    SigHashType sigHashType = SigHash.SINGLE | SigHash.ANYONECANPAY | SigHash.FORKID;
+    require(PrivateKeyPuzzle.extractSigHashFlagFromSig(sigs[0]) == sigHashType);
+    require(PrivateKeyPuzzle.extractSigHashFlagFromSig(sigs[1]) != sigHashType);
+    require(PrivateKeyPuzzle.extractRFromSig(sigs[0]) == PrivateKeyPuzzle.extractRFromSig(sigs[1]));
+  }
+}

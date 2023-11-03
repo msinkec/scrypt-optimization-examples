@@ -1,0 +1,19 @@
+
+contract HashedSetNonState {
+  HashedSet<int> set;
+  VarIntReader __scrypt_ts_accessPathReaderForProp__set;
+  constructor(HashedSet<int> set) {
+    this.set = set;
+  }
+  public function add(int key, bytes __scrypt_ts_accessPathForProp__set) {
+    this.__scrypt_ts_accessPathReaderForProp__set = new VarIntReader(__scrypt_ts_accessPathForProp__set);
+    require(this.set.add({key, this.__scrypt_ts_accessPathReaderForProp__set.readInt()}));
+    require(this.set.has({key, this.__scrypt_ts_accessPathReaderForProp__set.readInt()}));
+  }
+  public function delete(int key, bytes __scrypt_ts_accessPathForProp__set) {
+    this.__scrypt_ts_accessPathReaderForProp__set = new VarIntReader(__scrypt_ts_accessPathForProp__set);
+    require(this.set.has({key, this.__scrypt_ts_accessPathReaderForProp__set.readInt()}));
+    require(this.set.delete({key, this.__scrypt_ts_accessPathReaderForProp__set.readInt()}));
+    require(!this.set.has({key, this.__scrypt_ts_accessPathReaderForProp__set.readInt()}));
+  }
+}

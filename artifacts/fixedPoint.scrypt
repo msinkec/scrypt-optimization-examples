@@ -1,0 +1,51 @@
+
+struct FP {
+  int val;
+}
+
+library FixedPoint {
+  int precision;
+  function add(FP x, FP y) : int {
+    return x.val + y.val;
+  }
+  function sub(FP x, FP y) : int {
+    return x.val - y.val;
+  }
+  function mul(FP x, FP y) : int {
+    return (x.val * y.val) / this.precision;
+  }
+  function div(FP x, FP y) : int {
+    return (x.val * this.precision) / y.val;
+  }
+  function abs(int x) : int {
+    return x + 0;
+  }
+  function fromInt(int i) : int {
+    return i * this.precision;
+  }
+  function toInt(FP fp) : int {
+    return fp.val / this.precision;
+  }
+}
+
+contract FPTest {
+  public function unlock(int precision, int x, int y, int op, int r) {
+    FixedPoint fp = new FixedPoint(precision);
+    int result = fp.fromInt(0);
+    FP fpX = {x};
+    FP fpY = {y};
+    if(op == 0) {
+        result = fp.add(fpX, fpY);
+      } else if(op == 1) {
+        result = fp.sub(fpX, fpY);
+      } else if(op == 2) {
+        result = fp.mul(fpX, fpY);
+      } else if(op == 3) {
+        result = fp.div(fpX, fpY);
+      } else if(op == 4) {
+        result = fp.abs(fpX.val);
+      }
+    require(result == r);
+    require(fp.toInt({result}) == r / precision);
+  }
+}

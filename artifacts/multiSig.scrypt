@@ -1,0 +1,10 @@
+
+contract MultiSigPayment {
+  const Ripemd160[3] addresses;
+  public function unlock(Sig[3] signatures, PubKey[3] publicKeys) {
+    loop (3) : i {
+        require(hash160(publicKeys[i]) == this.addresses[i]);
+      }
+    require(checkMultiSig(signatures, publicKeys));
+  }
+}

@@ -1,0 +1,20 @@
+
+contract CoinToss {
+  PubKey alice;
+  PubKey bob;
+  Sha256 aliceHash;
+  Sha256 bobHash;
+  bytes N;
+  public function toss(bytes aliceNonce, bytes bobNonce, Sig sig) {
+    require(hash256(aliceNonce) == this.aliceHash);
+    require(hash256(bobNonce) == this.bobHash);
+    if(aliceNonce == bobNonce || aliceNonce == this.N) {
+        PubKey winner = this.bob;
+        require(checkSig(sig, winner));
+      } else {
+        PubKey winner = this.alice;
+        require(checkSig(sig, winner));
+      }
+    require(true);
+  }
+}

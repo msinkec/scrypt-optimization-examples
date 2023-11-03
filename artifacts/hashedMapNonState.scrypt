@@ -1,0 +1,31 @@
+
+contract HashedMapNonState {
+  HashedMap<int,bytes> map;
+  VarIntReader __scrypt_ts_accessPathReaderForProp__map;
+  constructor(HashedMap<int,bytes> map) {
+    this.map = map;
+  }
+  public function unlock(int key, bytes val, bytes __scrypt_ts_accessPathForProp__map) {
+    this.__scrypt_ts_accessPathReaderForProp__map = new VarIntReader(__scrypt_ts_accessPathForProp__map);
+    require(this.map.set({key, this.__scrypt_ts_accessPathReaderForProp__map.readInt()}, val));
+    loop (4) : i {
+        if(i < 2) {
+          require(this.map.set({key + (i), this.__scrypt_ts_accessPathReaderForProp__map.readInt()}, val));
+          require(this.map.has({key + (i), this.__scrypt_ts_accessPathReaderForProp__map.readInt()}));
+        } else {
+          require(this.map.set({key * 2 + (i), this.__scrypt_ts_accessPathReaderForProp__map.readInt()}, val));
+        }
+      }
+    require(this.map.canGet({key, this.__scrypt_ts_accessPathReaderForProp__map.readInt()}, val));
+    require(this.map.canGet({key * 2 + 2, this.__scrypt_ts_accessPathReaderForProp__map.readInt()}, val));
+    require(this.map.size() >= 5);
+    require(true);
+  }
+  public function delete(int key, bytes __scrypt_ts_accessPathForProp__map) {
+    this.__scrypt_ts_accessPathReaderForProp__map = new VarIntReader(__scrypt_ts_accessPathForProp__map);
+    require(this.map.has({key, this.__scrypt_ts_accessPathReaderForProp__map.readInt()}));
+    require(this.map.delete({key, this.__scrypt_ts_accessPathReaderForProp__map.readInt()}));
+    require(!this.map.has({key, this.__scrypt_ts_accessPathReaderForProp__map.readInt()}));
+    require(true);
+  }
+}

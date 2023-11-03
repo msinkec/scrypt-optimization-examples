@@ -1,0 +1,61 @@
+
+contract SVD {
+  int[4][4] A;
+  static const int[4][4] Identity = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]];
+  constructor(int[4][4] A) {
+    this.A = A;
+  }
+  public function main(int[4][4] U, int[4][4] Sigma, int[4][4] V, int k) {
+    require(SVD.validate(Sigma, k));
+    require(SVD.orthogonal(U));
+    require(SVD.orthogonal(V));
+    loop (4) : i {
+        if(i >= k) {
+          Sigma[i][i] = 0;
+        }
+      }
+    int[4][4] product = SVD.multiply(SVD.multiply(U, Sigma), V);
+    require(product == this.A);
+  }
+  static function validate(int[4][4] mat, int k) : bool {
+    bool result = true;
+    loop (4) : i {
+        loop (4) : j {
+          if(j == i) {
+            if(i > 1) {
+              result = result && mat[i][i] <= mat[i - 1][i - 1];
+            }
+            if(i <= k) {
+              result = result && mat[i][j] > 0;
+            }
+          } else {
+            result = result && mat[i][j] == 0;
+          }
+        }
+      }
+    return result;
+  }
+  static function orthogonal(int[4][4] mat) : bool {
+    return SVD.multiply(mat, SVD.transpose(mat)) == SVD.Identity;
+  }
+  static function transpose(int[4][4] mat) : int[4][4] {
+    int[4][4] mat1 = repeat(repeat(0, 4), 4);
+    loop (4) : i {
+        loop (4) : j {
+          mat1[i][j] = mat[j][i];
+        }
+      }
+    return mat1;
+  }
+  static function multiply(int[4][4] mat0, int[4][4] mat1) : int[4][4] {
+    int[4][4] mat2 = repeat(repeat(0, 4), 4);
+    loop (4) : i {
+        loop (4) : j {
+          loop (4) : k {
+            mat2[i][j] += mat0[i][k] * mat1[k][j];
+          }
+        }
+      }
+    return mat2;
+  }
+}

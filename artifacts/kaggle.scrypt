@@ -1,0 +1,96 @@
+
+struct States {
+  Submission[6] submissions;
+  int count;
+}
+
+struct DataPoint {
+  int height;
+  int weight;
+  int gender;
+}
+
+struct Submission {
+  int heightWeight;
+  int weightWeight;
+  int bias;
+  Ripemd160 addr;
+}
+struct __scrypt_ts_Outpoint {  bytes txid;  int outputIndex;}  struct __scrypt_ts_UTXO {  __scrypt_ts_Outpoint outpoint;  bytes script;  int value;}  struct __scrypt_ts_ScriptContext {  bytes version;  bytes hashPrevouts;  bytes hashSequence;  bytes hashOutputs;  int locktime;  int sequence;  SigHashType sigHashType;  __scrypt_ts_UTXO utxo;  SigHashPreimage preimage;}
+
+contract Kaggle {
+  @state States states;
+  DataPoint[5] trainingDataset;
+  Sha256 testingDatasetHash;
+  __scrypt_ts_ScriptContext ctx;
+  constructor(States states, DataPoint[5] trainingDataset, Sha256 testingDatasetHash) {
+    this.states = states;
+    this.trainingDataset = trainingDataset;
+    this.testingDatasetHash = testingDatasetHash;
+  }
+  public function submit(Submission subm, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'c3')));
+    this.ctx = Kaggle.createCtx(__scrypt_ts_txPreimage);
+    if(++this.states.count < (5)) {
+        loop (6) : i {
+          if((i) == this.states.count) {
+            this.states.submissions[i] = subm;
+          }
+        }
+      }
+    int amount = this.ctx.utxo.value;
+    bytes output = this.buildStateOutput(amount);
+    require(this.ctx.hashOutputs == hash256(output));
+  }
+  public function evaluate(DataPoint[10] testingDataset, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'c3')));
+    this.ctx = Kaggle.createCtx(__scrypt_ts_txPreimage);
+    require(this.validateTestData(testingDataset));
+    Ripemd160 winner = Ripemd160(b'');
+    int minError = 99999999999999;
+    loop (6) : i {
+        if((i) < this.states.count) {
+          Submission subm = this.states.submissions[i];
+          int error = Kaggle.calcError(subm, testingDataset);
+          if(error < minError) {
+            minError = error;
+            winner = subm.addr;
+          }
+        }
+      }
+    int amount = this.ctx.utxo.value;
+    bytes output = Utils.buildOutput(Utils.buildPublicKeyHashScript(winner), amount);
+    require(this.ctx.hashOutputs == hash256(output));
+  }
+  static function calcError(Submission subm, DataPoint[10] trainingDataset) : int {
+    int sum = 0;
+    loop (10) : i {
+        int prediction = Kaggle.predict(subm, trainingDataset[i]);
+        int delta = trainingDataset[i].gender - prediction;
+        sum += delta * delta;
+      }
+    return sum;
+  }
+  static function predict(Submission subm, DataPoint dataPoint) : int {
+    int sum = subm.bias;
+    sum += dataPoint.height * subm.heightWeight + dataPoint.weight * subm.weightWeight;
+    return Kaggle.stepActivate(sum);
+  }
+  static function stepActivate(int sum) : int {
+    return sum >= 0 ? 1 : 0;
+  }
+  function validateTestData(DataPoint[10] testingDataset) : bool {
+    return (this.testingDatasetHash == hash256(Kaggle.serializeDataPoints(testingDataset)));
+  }
+  static function serializeDataPoints(DataPoint[10] dataset) : bytes {
+    bytes sBuf = b'';
+    loop (10) : i {
+        DataPoint dp = dataset[i];
+        sBuf += pack(dp.height) + pack(dp.weight) + pack(dp.gender);
+      }
+    return sBuf;
+  }
+  static function createCtx(SigHashPreimage txPreimage) : __scrypt_ts_ScriptContext {  bytes version = SigHash.nVersion(txPreimage);  bytes hashPrevouts = SigHash.hashPrevouts(txPreimage);  bytes hashSequence = SigHash.hashSequence(txPreimage);  bytes hashOutputs = SigHash.hashOutputs(txPreimage);  int locktime = SigHash.nLocktime(txPreimage);  int sequence = SigHash.nSequence(txPreimage);  SigHashType sigHashType = SigHash.sigHashType(txPreimage);  bytes txid = SigHash.outpoint(txPreimage)[0 : 32];  int outputIndex = unpack(SigHash.outpoint(txPreimage)[32 :]);  __scrypt_ts_Outpoint outpoint = { txid, outputIndex };  bytes scriptCode = SigHash.scriptCode(txPreimage);  int value = SigHash.value(txPreimage);  __scrypt_ts_UTXO utxo = { outpoint, scriptCode, value };  return { version, hashPrevouts, hashSequence, hashOutputs, locktime, sequence, sigHashType, utxo, txPreimage };}
+  function timeLock(int locktime): bool {  bool res = true;  res = this.ctx.sequence < 0xffffffff;  if (    locktime < 500000000  ) {    res = res && this.ctx.locktime < 500000000;  }  return res && this.ctx.locktime >= locktime;}
+  function buildStateOutput(int amount) : bytes {  bytes script = this.getStateScript();  return Utils.buildOutput(script, amount);}
+}

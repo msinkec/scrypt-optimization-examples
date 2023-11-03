@@ -1,0 +1,24 @@
+
+library Shift {
+  static function pow2(int n) : int {
+    return unpack(num2bin(0, n / 8));
+  }
+  static function left(int x, int n) : int {
+    return x * Shift.pow2(n);
+  }
+  static function right(int x, int n) : int {
+    return x / Shift.pow2(n);
+  }
+}
+
+contract ShiftTest {
+  public function pow2(int n, int x) {
+    require(Shift.pow2(n) == x);
+  }
+  public function left(int x, int y, int z) {
+    require(Shift.left(x, y) == z);
+  }
+  public function right(int x, int y, int z) {
+    require(Shift.right(x, y) == z);
+  }
+}

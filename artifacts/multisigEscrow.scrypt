@@ -1,0 +1,47 @@
+struct __scrypt_ts_Outpoint {  bytes txid;  int outputIndex;}  struct __scrypt_ts_UTXO {  __scrypt_ts_Outpoint outpoint;  bytes script;  int value;}  struct __scrypt_ts_ScriptContext {  bytes version;  bytes hashPrevouts;  bytes hashSequence;  bytes hashOutputs;  int locktime;  int sequence;  SigHashType sigHashType;  __scrypt_ts_UTXO utxo;  SigHashPreimage preimage;}
+
+contract MultiSigEscrow {
+  const Ripemd160 buyerAddr;
+  const Ripemd160 sellerAddr;
+  const PubKey[3] arbiters;
+  const int deadline;
+  __scrypt_ts_ScriptContext ctx;
+  constructor(Ripemd160 buyerAddr, Ripemd160 sellerAddr, PubKey[3] arbiters, int deadline) {
+    this.buyerAddr = buyerAddr;
+    this.sellerAddr = sellerAddr;
+    this.arbiters = arbiters;
+    this.deadline = deadline;
+  }
+  public function confirmPayment(Sig buyerSig, PubKey buyerPubKey, Sig[3] arbiterSigs, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'c3')));
+    this.ctx = MultiSigEscrow.createCtx(__scrypt_ts_txPreimage);
+    require(hash160(buyerPubKey) == this.buyerAddr);
+    require(checkSig(buyerSig, buyerPubKey));
+    require(checkMultiSig(arbiterSigs, this.arbiters));
+    int amount = this.ctx.utxo.value;
+    bytes out = Utils.buildOutput(Utils.buildPublicKeyHashScript(this.sellerAddr), amount);
+    require(hash256(out) == this.ctx.hashOutputs);
+  }
+  public function refund(Sig buyerSig, PubKey buyerPubKey, Sig[3] arbiterSigs, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = MultiSigEscrow.createCtx(__scrypt_ts_txPreimage);
+    require(hash160(buyerPubKey) == this.buyerAddr);
+    require(checkSig(buyerSig, buyerPubKey));
+    require(checkMultiSig(arbiterSigs, this.arbiters));
+    int amount = this.ctx.utxo.value;
+    bytes out = Utils.buildOutput(Utils.buildPublicKeyHashScript(this.buyerAddr), amount);
+    require(hash256(out) == this.ctx.hashOutputs);
+  }
+  public function refundDeadline(Sig buyerSig, PubKey buyerPubKey, SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = MultiSigEscrow.createCtx(__scrypt_ts_txPreimage);
+    require(hash160(buyerPubKey) == this.buyerAddr);
+    require(checkSig(buyerSig, buyerPubKey));
+    require(this.timeLock(this.deadline));
+    int amount = this.ctx.utxo.value;
+    bytes out = Utils.buildOutput(Utils.buildPublicKeyHashScript(this.buyerAddr), amount);
+    require(hash256(out) == this.ctx.hashOutputs);
+  }
+  static function createCtx(SigHashPreimage txPreimage) : __scrypt_ts_ScriptContext {  bytes version = SigHash.nVersion(txPreimage);  bytes hashPrevouts = SigHash.hashPrevouts(txPreimage);  bytes hashSequence = SigHash.hashSequence(txPreimage);  bytes hashOutputs = SigHash.hashOutputs(txPreimage);  int locktime = SigHash.nLocktime(txPreimage);  int sequence = SigHash.nSequence(txPreimage);  SigHashType sigHashType = SigHash.sigHashType(txPreimage);  bytes txid = SigHash.outpoint(txPreimage)[0 : 32];  int outputIndex = unpack(SigHash.outpoint(txPreimage)[32 :]);  __scrypt_ts_Outpoint outpoint = { txid, outputIndex };  bytes scriptCode = SigHash.scriptCode(txPreimage);  int value = SigHash.value(txPreimage);  __scrypt_ts_UTXO utxo = { outpoint, scriptCode, value };  return { version, hashPrevouts, hashSequence, hashOutputs, locktime, sequence, sigHashType, utxo, txPreimage };}
+  function timeLock(int locktime): bool {  bool res = true;  res = this.ctx.sequence < 0xffffffff;  if (    locktime < 500000000  ) {    res = res && this.ctx.locktime < 500000000;  }  return res && this.ctx.locktime >= locktime;}
+}

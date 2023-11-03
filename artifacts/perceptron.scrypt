@@ -1,0 +1,63 @@
+
+struct PerceptronStates {
+  int heightWeight;
+  int weightWeight;
+  int bias;
+}
+
+struct PerceptronInput {
+  int height;
+  int weight;
+}
+struct __scrypt_ts_Outpoint {  bytes txid;  int outputIndex;}  struct __scrypt_ts_UTXO {  __scrypt_ts_Outpoint outpoint;  bytes script;  int value;}  struct __scrypt_ts_ScriptContext {  bytes version;  bytes hashPrevouts;  bytes hashSequence;  bytes hashOutputs;  int locktime;  int sequence;  SigHashType sigHashType;  __scrypt_ts_UTXO utxo;  SigHashPreimage preimage;}
+
+contract Perceptron {
+  @state PerceptronStates states;
+  static const int LR = 1;
+  PerceptronInput[10] inputs;
+  int[10] outputs;
+  __scrypt_ts_ScriptContext ctx;
+  constructor(PerceptronStates states, PerceptronInput[10] inputs, int[10] outputs) {
+    this.states = states;
+    this.inputs = inputs;
+    this.outputs = outputs;
+  }
+  function train(PerceptronStates s) : PerceptronStates {
+    loop (10) : i {
+        int prediction = this.predict(s, (i));
+        int delta = this.outputs[i] - prediction;
+        s = this.adjust(s, delta);
+      }
+    return s;
+  }
+  function predict(PerceptronStates s, int i) : int {
+    int sum = s.bias;
+    PerceptronInput input = this.inputs[(i)];
+    sum += input.height * s.heightWeight + input.weight * s.weightWeight;
+    return Perceptron.stepActivate(sum);
+  }
+  function adjust(PerceptronStates s, int delta) : PerceptronStates {
+    int scaledDelta = delta * 1;
+    loop (10) : i {
+        PerceptronInput input = this.inputs[i];
+        s.heightWeight += input.height * scaledDelta;
+        s.weightWeight += input.weight * scaledDelta;
+      }
+    s.bias += scaledDelta;
+    return s;
+  }
+  static function stepActivate(int sum) : int {
+    return sum >= 0 ? 1 : 0;
+  }
+  public function main(SigHashPreimage __scrypt_ts_txPreimage) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'c3')));
+    this.ctx = Perceptron.createCtx(__scrypt_ts_txPreimage);
+    this.states = this.train(this.states);
+    int amount = this.ctx.utxo.value;
+    bytes output = this.buildStateOutput(amount);
+    require(this.ctx.hashOutputs == hash256(output));
+  }
+  static function createCtx(SigHashPreimage txPreimage) : __scrypt_ts_ScriptContext {  bytes version = SigHash.nVersion(txPreimage);  bytes hashPrevouts = SigHash.hashPrevouts(txPreimage);  bytes hashSequence = SigHash.hashSequence(txPreimage);  bytes hashOutputs = SigHash.hashOutputs(txPreimage);  int locktime = SigHash.nLocktime(txPreimage);  int sequence = SigHash.nSequence(txPreimage);  SigHashType sigHashType = SigHash.sigHashType(txPreimage);  bytes txid = SigHash.outpoint(txPreimage)[0 : 32];  int outputIndex = unpack(SigHash.outpoint(txPreimage)[32 :]);  __scrypt_ts_Outpoint outpoint = { txid, outputIndex };  bytes scriptCode = SigHash.scriptCode(txPreimage);  int value = SigHash.value(txPreimage);  __scrypt_ts_UTXO utxo = { outpoint, scriptCode, value };  return { version, hashPrevouts, hashSequence, hashOutputs, locktime, sequence, sigHashType, utxo, txPreimage };}
+  function timeLock(int locktime): bool {  bool res = true;  res = this.ctx.sequence < 0xffffffff;  if (    locktime < 500000000  ) {    res = res && this.ctx.locktime < 500000000;  }  return res && this.ctx.locktime >= locktime;}
+  function buildStateOutput(int amount) : bytes {  bytes script = this.getStateScript();  return Utils.buildOutput(script, amount);}
+}

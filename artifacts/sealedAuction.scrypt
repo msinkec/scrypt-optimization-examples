@@ -1,0 +1,96 @@
+struct __scrypt_ts_Outpoint {  bytes txid;  int outputIndex;}  struct __scrypt_ts_UTXO {  __scrypt_ts_Outpoint outpoint;  bytes script;  int value;}  struct __scrypt_ts_ScriptContext {  bytes version;  bytes hashPrevouts;  bytes hashSequence;  bytes hashOutputs;  int locktime;  int sequence;  SigHashType sigHashType;  __scrypt_ts_UTXO utxo;  SigHashPreimage preimage;}
+struct __scrypt_ts_Change {  int amount;  Ripemd160 address;}
+
+contract SealedAuction {
+  PubKey auctioneer;
+  @state HashedMap<PubKey,Sha256> bidCommitments;
+  VarIntReader __scrypt_ts_accessPathReaderForProp__bidCommitments;
+  @state HashedSet<PubKey> hasWithdrawnCollateral;
+  VarIntReader __scrypt_ts_accessPathReaderForProp__hasWithdrawnCollateral;
+  int biddingDeadline;
+  int revealDeadline;
+  @state bool biddingFinished;
+  int collateralAmount;
+  @state PubKey highestBidder;
+  @state int highestBidderAmount;
+  @state bool auctionFinished;
+  __scrypt_ts_ScriptContext ctx;
+  __scrypt_ts_Change __scrypt_ts_change;
+  constructor(PubKey auctioneer, int biddingDeadline, int revealDeadline, HashedMap<PubKey,Sha256> bidCommitments, HashedSet<PubKey> hasWithdrawnCollateral, int collateralAmount) {
+    this.auctioneer = auctioneer;
+    this.biddingDeadline = biddingDeadline;
+    this.revealDeadline = revealDeadline;
+    this.biddingFinished = true;
+    this.bidCommitments = bidCommitments;
+    this.hasWithdrawnCollateral = hasWithdrawnCollateral;
+    this.collateralAmount = collateralAmount;
+    this.highestBidder = PubKey(b'000000000000000000000000000000000000000000000000000000000000000000000000');
+    this.highestBidderAmount = 0;
+    this.auctionFinished = false;
+  }
+  public function bid(PubKey bidder, Sha256 bidCommitment, SigHashPreimage __scrypt_ts_txPreimage, int __scrypt_ts_changeAmount, Ripemd160 __scrypt_ts_changeAddress, bytes __scrypt_ts_accessPathForProp__bidCommitments) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = SealedAuction.createCtx(__scrypt_ts_txPreimage);
+    this.__scrypt_ts_change = {__scrypt_ts_changeAmount, __scrypt_ts_changeAddress};
+    this.__scrypt_ts_accessPathReaderForProp__bidCommitments = new VarIntReader(__scrypt_ts_accessPathForProp__bidCommitments);
+    require(!this.biddingFinished);
+    require(!this.bidCommitments.has({bidder, this.__scrypt_ts_accessPathReaderForProp__bidCommitments.readInt()}));
+    require(this.bidCommitments.set({bidder, this.__scrypt_ts_accessPathReaderForProp__bidCommitments.readInt()}, bidCommitment));
+    bytes outputs = this.buildStateOutput(this.ctx.utxo.value + this.collateralAmount);
+    outputs += this.buildChangeOutput();
+    require(hash256(outputs) == this.ctx.hashOutputs);
+  }
+  public function revealBid(PubKey bidder, Sha256 bidCommitment, int bid, bytes salt, SigHashPreimage __scrypt_ts_txPreimage, int __scrypt_ts_changeAmount, Ripemd160 __scrypt_ts_changeAddress, bytes __scrypt_ts_accessPathForProp__bidCommitments) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = SealedAuction.createCtx(__scrypt_ts_txPreimage);
+    this.__scrypt_ts_change = {__scrypt_ts_changeAmount, __scrypt_ts_changeAddress};
+    this.__scrypt_ts_accessPathReaderForProp__bidCommitments = new VarIntReader(__scrypt_ts_accessPathForProp__bidCommitments);
+    require(this.timeLock(this.biddingDeadline));
+    this.biddingFinished = true;
+    require(this.bidCommitments.canGet({bidder, this.__scrypt_ts_accessPathReaderForProp__bidCommitments.readInt()}, bidCommitment));
+    require(hash256(num2bin(bid, 32) + salt) == bidCommitment);
+    require(bid <= this.collateralAmount);
+    if(bid > this.highestBidderAmount) {
+        this.highestBidder = bidder;
+        this.highestBidderAmount = bid;
+      }
+    bytes outputs = this.buildStateOutput(this.ctx.utxo.value);
+    outputs += this.buildChangeOutput();
+    require(hash256(outputs) == this.ctx.hashOutputs);
+  }
+  public function finish(SigHashPreimage __scrypt_ts_txPreimage, int __scrypt_ts_changeAmount, Ripemd160 __scrypt_ts_changeAddress) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = SealedAuction.createCtx(__scrypt_ts_txPreimage);
+    this.__scrypt_ts_change = {__scrypt_ts_changeAmount, __scrypt_ts_changeAddress};
+    require(!this.auctionFinished);
+    require(this.timeLock(this.revealDeadline));
+    this.auctionFinished = true;
+    bytes outputs = this.buildStateOutput(this.ctx.utxo.value + this.highestBidderAmount);
+    if(this.highestBidderAmount > 0) {
+        outputs += Utils.buildOutput(Utils.buildPublicKeyHashScript(hash160(this.auctioneer)), this.highestBidderAmount);
+      }
+    outputs += this.buildChangeOutput();
+    require(hash256(outputs) == this.ctx.hashOutputs);
+  }
+  public function withdrawCollateral(PubKey bidder, SigHashPreimage __scrypt_ts_txPreimage, int __scrypt_ts_changeAmount, Ripemd160 __scrypt_ts_changeAddress, bytes __scrypt_ts_accessPathForProp__hasWithdrawnCollateral) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = SealedAuction.createCtx(__scrypt_ts_txPreimage);
+    this.__scrypt_ts_change = {__scrypt_ts_changeAmount, __scrypt_ts_changeAddress};
+    this.__scrypt_ts_accessPathReaderForProp__hasWithdrawnCollateral = new VarIntReader(__scrypt_ts_accessPathForProp__hasWithdrawnCollateral);
+    require(this.auctionFinished);
+    require(!this.hasWithdrawnCollateral.has({bidder, this.__scrypt_ts_accessPathReaderForProp__hasWithdrawnCollateral.readInt()}));
+    require(this.hasWithdrawnCollateral.add({bidder, this.__scrypt_ts_accessPathReaderForProp__hasWithdrawnCollateral.readInt()}));
+    int amount = this.collateralAmount;
+    if(bidder == this.highestBidder) {
+        amount -= this.highestBidderAmount;
+      }
+    bytes outputs = this.buildStateOutput(this.ctx.utxo.value - amount);
+    outputs += Utils.buildOutput(Utils.buildPublicKeyHashScript(hash160(bidder)), amount);
+    outputs += this.buildChangeOutput();
+    require(hash256(outputs) == this.ctx.hashOutputs);
+  }
+  static function createCtx(SigHashPreimage txPreimage) : __scrypt_ts_ScriptContext {  bytes version = SigHash.nVersion(txPreimage);  bytes hashPrevouts = SigHash.hashPrevouts(txPreimage);  bytes hashSequence = SigHash.hashSequence(txPreimage);  bytes hashOutputs = SigHash.hashOutputs(txPreimage);  int locktime = SigHash.nLocktime(txPreimage);  int sequence = SigHash.nSequence(txPreimage);  SigHashType sigHashType = SigHash.sigHashType(txPreimage);  bytes txid = SigHash.outpoint(txPreimage)[0 : 32];  int outputIndex = unpack(SigHash.outpoint(txPreimage)[32 :]);  __scrypt_ts_Outpoint outpoint = { txid, outputIndex };  bytes scriptCode = SigHash.scriptCode(txPreimage);  int value = SigHash.value(txPreimage);  __scrypt_ts_UTXO utxo = { outpoint, scriptCode, value };  return { version, hashPrevouts, hashSequence, hashOutputs, locktime, sequence, sigHashType, utxo, txPreimage };}
+  function timeLock(int locktime): bool {  bool res = true;  res = this.ctx.sequence < 0xffffffff;  if (    locktime < 500000000  ) {    res = res && this.ctx.locktime < 500000000;  }  return res && this.ctx.locktime >= locktime;}
+  function buildStateOutput(int amount) : bytes {  bytes script = this.getStateScript();  return Utils.buildOutput(script, amount);}
+  function buildChangeOutput() : bytes {  return this.__scrypt_ts_change.amount > 0 ? Utils.buildOutput(Utils.buildPublicKeyHashScript(this.__scrypt_ts_change.address), this.__scrypt_ts_change.amount) : b'';}
+}

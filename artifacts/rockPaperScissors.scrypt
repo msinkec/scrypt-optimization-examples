@@ -1,0 +1,44 @@
+struct __scrypt_ts_Outpoint {  bytes txid;  int outputIndex;}  struct __scrypt_ts_UTXO {  __scrypt_ts_Outpoint outpoint;  bytes script;  int value;}  struct __scrypt_ts_ScriptContext {  bytes version;  bytes hashPrevouts;  bytes hashSequence;  bytes hashOutputs;  int locktime;  int sequence;  SigHashType sigHashType;  __scrypt_ts_UTXO utxo;  SigHashPreimage preimage;}
+struct __scrypt_ts_Change {  int amount;  Ripemd160 address;}
+
+contract RockPaperScissors2 {
+  PubKey playerA;
+  PubKey playerB;
+  Sha256 playerAHash;
+  Sha256 playerBHash;
+  static const int ROCK = 0;
+  static const int PAPER = 1;
+  static const int SCISSORS = 2;
+  __scrypt_ts_ScriptContext ctx;
+  __scrypt_ts_Change __scrypt_ts_change;
+  constructor(PubKey playerA, PubKey playerB, Sha256 playerAHash, Sha256 playerBHash) {
+    this.playerA = playerA;
+    this.playerB = playerB;
+    this.playerAHash = playerAHash;
+    this.playerBHash = playerBHash;
+  }
+  public function play(int playerAMove, int playerBMove, bytes playerASalt, bytes playerBSalt, SigHashPreimage __scrypt_ts_txPreimage, int __scrypt_ts_changeAmount, Ripemd160 __scrypt_ts_changeAddress) {
+    require(Tx.checkPreimageSigHashType(__scrypt_ts_txPreimage, SigHashType(b'41')));
+    this.ctx = RockPaperScissors2.createCtx(__scrypt_ts_txPreimage);
+    this.__scrypt_ts_change = {__scrypt_ts_changeAmount, __scrypt_ts_changeAddress};
+    require(Sha256(num2bin(playerAMove, 1) + playerASalt) == this.playerAHash);
+    require(Sha256(num2bin(playerBMove, 1) + playerBSalt) == this.playerBHash);
+    int amount = this.ctx.utxo.value;
+    bytes outputs = b'';
+    if(playerAMove == playerBMove) {
+        outputs += Utils.buildOutput(Utils.buildPublicKeyHashScript(hash160(this.playerA)), amount / 2);
+        outputs += Utils.buildOutput(Utils.buildPublicKeyHashScript(hash160(this.playerB)), amount / 2);
+      } else {
+        PubKey winner = this.playerB;
+        if((playerAMove == 0 && playerBMove == 2) || (playerAMove == 2 && playerBMove == 1) || (playerAMove == 1 && playerBMove == 0)) {
+          winner = this.playerA;
+        }
+        outputs += Utils.buildOutput(Utils.buildPublicKeyHashScript(hash160(winner)), amount);
+      }
+    outputs += this.buildChangeOutput();
+    require(hash256(outputs) == this.ctx.hashOutputs);
+  }
+  static function createCtx(SigHashPreimage txPreimage) : __scrypt_ts_ScriptContext {  bytes version = SigHash.nVersion(txPreimage);  bytes hashPrevouts = SigHash.hashPrevouts(txPreimage);  bytes hashSequence = SigHash.hashSequence(txPreimage);  bytes hashOutputs = SigHash.hashOutputs(txPreimage);  int locktime = SigHash.nLocktime(txPreimage);  int sequence = SigHash.nSequence(txPreimage);  SigHashType sigHashType = SigHash.sigHashType(txPreimage);  bytes txid = SigHash.outpoint(txPreimage)[0 : 32];  int outputIndex = unpack(SigHash.outpoint(txPreimage)[32 :]);  __scrypt_ts_Outpoint outpoint = { txid, outputIndex };  bytes scriptCode = SigHash.scriptCode(txPreimage);  int value = SigHash.value(txPreimage);  __scrypt_ts_UTXO utxo = { outpoint, scriptCode, value };  return { version, hashPrevouts, hashSequence, hashOutputs, locktime, sequence, sigHashType, utxo, txPreimage };}
+  function timeLock(int locktime): bool {  bool res = true;  res = this.ctx.sequence < 0xffffffff;  if (    locktime < 500000000  ) {    res = res && this.ctx.locktime < 500000000;  }  return res && this.ctx.locktime >= locktime;}
+  function buildChangeOutput() : bytes {  return this.__scrypt_ts_change.amount > 0 ? Utils.buildOutput(Utils.buildPublicKeyHashScript(this.__scrypt_ts_change.address), this.__scrypt_ts_change.amount) : b'';}
+}

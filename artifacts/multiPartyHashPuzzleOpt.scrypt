@@ -1,0 +1,11 @@
+
+contract MultiPartyHashPuzzleOpt {
+  const Sha256 combinedHash;
+  public function unlock(bytes[10] preimages) {
+    bytes combinedHash = b'';
+    loop (10) : i {
+        combinedHash = sha256(combinedHash + preimages[i]);
+      }
+    require(combinedHash == this.combinedHash);
+  }
+}

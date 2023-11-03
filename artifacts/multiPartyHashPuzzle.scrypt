@@ -1,0 +1,10 @@
+
+contract MultiPartyHashPuzzle {
+  const Sha256[10] hashes;
+  public function unlock(bytes[10] preimages) {
+    loop (10) : i {
+        require(sha256(preimages[i]) == this.hashes[i]);
+      }
+    require(true);
+  }
+}

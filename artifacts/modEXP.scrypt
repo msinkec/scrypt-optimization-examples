@@ -1,0 +1,23 @@
+
+contract ModExp {
+  const int M;
+  function modExp(int x, int y) : int {
+    int res = 1;
+    x = x % this.M;
+    if(x != 0) {
+        loop (3) : i {
+          if(y >= 0) {
+            if(y % 2) res = (res * x) % this.M;
+            y = y / 2;
+            x = (x * x) % this.M;
+          }
+        }
+      } else {
+        res = 0;
+      }
+    return res;
+  }
+  public function main(int x, int y, int z) {
+    require(z == this.modExp(x, y));
+  }
+}
